@@ -1,0 +1,40 @@
+#menu {
+
+    background-color: #e86b1c;
+}
+
+#menu ul li {
+
+    padding: 0 150px 0 150px;
+    color: #f8f9fb;
+    font-size: x-large;
+}
+
+a:link {
+    color: black
+}
+
+a:visited {
+    color: black;
+}
+
+#menu ul li a:hover {
+
+    color: white;
+    text-decoration: underline;
+}
+
+#paginas ul li {
+    padding-left: 20px;
+}
+
+div#carta {
+    background-color: #deddd8;
+}
+.botonancho{
+    width: 200px;
+    height: 80px;
+    background-color: #e86b1c;
+    color:white;
+    
+}

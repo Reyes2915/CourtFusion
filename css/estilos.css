@@ -1,0 +1,406 @@
+.fc-toolbar {
+    text-transform: capitalize;
+}
+
+/* Estilos para el primer carrusel */
+#carousel-item-1 {
+    /* Estilo de fondo para la primera diapositiva */
+    background-color: #007BFF;
+}
+
+#caption-1 {
+    /* Estilo de texto para la primera diapositiva */
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.visual-hidden-court {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* Estilos para el segundo carrusel */
+#carousel-item-2 {
+    /* Estilo de fondo para la segunda diapositiva */
+    background-color: #28A745;
+}
+
+#caption-2 h2 {
+    /* Estilo de texto para la segunda diapositiva */
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#caption-2 p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el tercer carrusel */
+#carousel-item-3 {
+    /* Estilo de fondo para la tercera diapositiva */
+    background-color: #FFC107;
+}
+
+#caption-3 {
+    /* Estilo de texto para la tercera diapositiva */
+    color: #000;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#foto1, #foto2, #foto3 {
+    height: 500px;
+}
+
+.bg-orange {
+    background-color: orange;
+}
+
+.eye-icon-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.cartaverde {
+    background-color: rgb(5, 209, 5);
+}
+
+.star-icon {
+    color: black;
+    /* Color inicial de la estrella */
+}
+
+.star-icon:hover, .star-active {
+    color: yellow;
+    /* Color al pasar el ratón por encima y al hacer clic (activa) */
+}
+
+
+/* Estilo por defecto para los iconos de pulgar hacia arriba y abajo */
+.thumbs-icon {
+    color: black;
+    /* Color negro por defecto */
+    transform: scale(1.1);
+    /* Escala el ícono */
+}
+
+/* Estilo para el icono de pulgar hacia arriba cuando se da "like" */
+.like-button.liked .hand-icon .thumbs-icon {
+    color: #00b300;
+    /* Cambia el color a un verde más brillante */
+}
+
+/* Estilo para el icono de pulgar hacia abajo cuando se da "dislike" */
+.dislike-button.disliked .hand-icon .thumbs-icon {
+    color: red;
+    /* Mantiene el color rojo */
+}
+
+.card {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.message {
+    text-align: center;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+/* Estilo para los botones de paginación */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+div#carta {
+    background-color: #deddd8;
+}
+
+.botonancho {
+    width: 210px;
+    height: 80px;
+    background-color: #e86b1c;
+    color: white;
+}
+
+.botonancho:hover {
+    background-color: #e86b1c;
+    color: white;
+    opacity: 0.9;
+    transform:  scale(1.05);
+}
+
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .botonancho {
+        margin: 5px 5px 5px 5px;
+    }
+
+}
+
+@media(max-width: 576px) {
+    #bolsaempleo {
+        margin-right: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .botonancho {
+        margin: 5px 5px 5px 5px;
+    }
+}
+
+.prev-page, .next-page {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el modal */
+.cookie-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    z-index: 999;
+}
+
+
+/* Estilo para el contenedor de la elipse dividida */
+.ellipse-button-container {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    /* Ancho total del contenedor */
+}
+
+/* Estilo para la mitad izquierda de la elipse (Usuario) */
+.ellipse-button-left {
+    background-color: #ccc;
+    /* Color de fondo gris */
+    color: #000;
+    /* Color de texto negro */
+    border: none;
+    border-radius: 50px 0 0 50px;
+    /* Bordes redondeados solo a la izquierda */
+    padding: 10px 0;
+    flex: 1;
+    /* Toma la mitad del ancho */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo para la mitad derecha de la elipse (Empresa) */
+.ellipse-button-right {
+    background-color: #ccc;
+    /* Color de fondo gris */
+    color: #000;
+    /* Color de texto negro */
+    border: none;
+    border-radius: 0 50px 50px 0;
+    /* Bordes redondeados solo a la derecha */
+    padding: 10px 0;
+    flex: 1;
+    /* Toma la mitad del ancho */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo al pasar el mouse sobre las mitades */
+.ellipse-button-left:hover,
+.ellipse-button-right:hover {
+    background-color: #999;
+    /* Cambia el color al pasar el mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cookie-content {
+    background: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+/* Estilos para el botón de aceptar cookies */
+.btn-accept-cookies {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.prev-page,
+.next-page {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px;
+    /* Espacio entre los botones de la paginación */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.prev-page:hover,
+.next-page:hover {
+    background-color: #0056b3;
+}
+
+
+#contenedor {
+
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#registroempresa {
+    z-index: 0;
+    /* Asegura que el formulario de empresa esté detrás del de usuario */
+    background-color: #f0f0f0;
+    /* Cambia el color de fondo según tus necesidades */
+    position: absolute;
+}
+
+#fondoregistro {
+    z-index: 1;
+    /* Asegura que el formulario de usuario esté por encima del de empresa */
+    background-color: #f0f0f0;
+    /* Cambia el color de fondo según tus necesidades */
+}
+
+.cartadeporte:hover{
+    transform: scale(1.05);
+    opacity:  0.8;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#pie {
+    margin-top: auto;
+    z-index: 0;
+    /* Esto empujará el pie de página hacia la parte inferior */
+}
+    .circle-text {
+      color: rgb(255, 255, 255);
+      font-weight: bold;
+      font-size:xx-large;
+    }
+
+    .tituloindex{
+        font-size: 50px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    .parrafoindex{
+        font-size: 20px;
+        font-weight: bold;
+        color: #ffffff;
+    }
+
+    /*Si la resolucion es xl le ponemos me-5 a los textos con la clase textosxl*/
+    @media (min-width: 1200px) {
+        .textosxl{
+            margin-right: 5rem;
+        }
+    }
+
+/*Para los circulos de los gifs*/   
+.circle-container {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  /*Si la resolucion es xl le ponemos me-5 a circle-container que tengan ademas la clase textosxl*/
+  @media (min-width: 1200px) {
+    .circle-container.textosxl {
+      margin-right: 8rem;
+    }
+  }
+
+  .circle-text {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .gifdeporte:hover{
+    transform: scale(1.1);
+    opacity:  0.8;
+}
+
+
+
+.clockpicker-tick-disabled {
+    border-radius: 50%;
+    color: rgb(192, 192, 192);
+    line-height: 26px;
+    text-align: center;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    cursor: not-allowed;
+}
+

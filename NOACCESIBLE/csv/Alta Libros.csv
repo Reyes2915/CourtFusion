@@ -1,0 +1,4 @@
+﻿COD_LIBRO;TITULO;AUTOR;MATERIA;EDITORIAL;A_EDICION;SOPORTE_M;USUARIO;COD_DPTO;ESTADO
+ISBN_EJEMPLAR;Maximo 100 caracteres;Maximo 100 caracteres. Mas de un autor separado por comas;Maximo 30 caracteres. Mas de una materia separa por comas;Maximo 30 caracteres;Año de edición, cuatro digitos;SI/NO;ALUMNO/PROFESOR/CONSULTA;Numerico;BUENO/MALO
+9,78E+12;Harry Potter y la piedra filosofal;J.K. Rowling;AGRARIA;SALAMANDRA;1997;SI;CONSULTA;6;BUENO
+9,78847E+12;DON QUIJOTE DE LA MANCHA;Miguel de Cervantes Saavedra;AGRARIA;ANAYA;1605;NO;ALUMNO;2;MALO

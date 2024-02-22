@@ -1,0 +1,4 @@
+Options All -Indexes
+RewriteEngine on
+RewriteCond %{HTTP_REFERER} !^/Ejercicios/Proyecto/index.php.*$ [NC]
+RewriteRule .(php)$ /Ejercicios/Proyecto/index.php [R,L]

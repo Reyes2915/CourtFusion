@@ -1,0 +1,84 @@
+sistema de reserva introducir el codigo y filtrar por el.dni clave primaria, de ahi sacamos nombre apellidos,todos alfanumericos menos el nie
+en alumnos dni,apellidos,nombre,alumn clave foranea,nie desde ahi creas el csv.
+Tabla matriculas
+Alumno clave primaria combinada con grupo,estudios y grupo
+Tabla profesor
+dni clave primaria, apellidos,nombre,departamento y rol para saber si son jefes mo profesores,codigo departamento
+Tabla departamentos
+codigo departamento,nombre departamento y departamento de administracion con codigo 0 que es el administrador,centro(cifp,cifp1 albadalejito,pedro mercedes),ubicacion
+Tabla libros
+Codigo libro:ISBN_Numero de ejemplar
+Titulo
+Autor
+Materia
+Editorial
+Año de edicion
+Incluye soporte multimedia:Si/No
+Estado:Bueno/Malo
+Usuarios:Alumnos/Profesores/Consulta
+Departamento:Codigo de departamento
+
+Tabla prestamos
+Numero prestamo con historico primary key
+codigo libro
+dni  
+fecha recogida
+fecha devolucion: 30 dias posteriores que  no caiga ni en sabado ni en domingo
+Devuelto:si/No
+ Formulario de prestamos
+Tabla reservas
+
+Codigo libro:Primary key
+Dni
+Fecha_F:7 dias despues
+Generar un pdf para guardarlo en una carpeta
+Formulario de reservas
+Base de datos:BibliotecaDelgador
+
+
+Administracion con login
+Mantenimiento altas bajas modificaciones de titulos, modificar titulos,editarlos,dar de baja,consultar si estan prestados,consultar reservas,fechas de devolucion
+Poder dar altas uncias y masivas desde una excel(avisar csv con los campos necesarios y que los campos  vayan separados por ;)
+
+La cabecera la misma que la del cif sin la barra negra y en la barra naranja perfil,consultas y administracion
+
+Despues de filtrar en consultas que vuelvan a aparecer los filtros
+
+Al lado de cada libro en consultas boton reservar y pide identificacion cada vez y si puedes lo resrva y si no no deja y vuelve a consultas
+
+
+Boton anular en la semitabla reservas en perfil
+
+
+
+Gestion de usuarios
+Individual
+Buscamos con el dni
+Si no lo encuentra nos muestra un formulario para meterlo
+Si esta nos salen los datos algunos editables y otros no y al lado boton baja y boton modificar
+
+Masiva
+Formulario que nos pida csv,borramos la tabla(delete all) y hacemos un insert de los datos del csv, lees en que tabla estas para meter en alumnos o profesores
+Lees la primera linea del scv y si el primer campo se llama alumno es un alumno y si se llama apellidos es un profesor.
+
+Gestion de departamentos
+
+Editables el centro y el dni
+
+Al resetear contraseña la generas aleatoria,la hasheas , esa la metes en la base de datos y muestras sin hashear
+
+Campos de libros en orden:
+-cod-libro: ISBN _ 1 13 DIGITOS sin guiones _ numero ejemplar VARCHAR16
+-titulo: varchar100 (a la salida tendra que mostrar menos caracteres)
+-autor: varchar100 (separados por comas los autores que haya)
+-materia: varchar30(si hay libros de una materia se separarian por comas) 
+-editorial: varchar25
+-a_edicion: es el año de edicion varchar4
+-soporte_m: tipo enum(si/no)
+-usuario: enum (alumno/profesor/consulta/
+-cod_dpto:number2
+-estado: enum (bueno/malo)
+(DISPNIBILIDAD esta en la tabla prestamos no en libros ya que esta se usara para insertar libros de alta)
+
+
+Los datos de los csv los cargamos a la base de dats con insert como en la imagen de insercion linea por linea

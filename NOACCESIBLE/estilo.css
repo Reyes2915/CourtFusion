@@ -1,0 +1,67 @@
+#menu {
+
+    background-color: #e86b1c;
+}
+@media (min-width: 1200px){ 
+    #menu ul li {
+
+        padding: 0 100px 0 100px;
+        color: #f8f9fb;
+        font-size: x-large;
+    }
+  }
+  @media (max-width: 1200px){ 
+    #menu ul li {
+
+        padding: 0 20px 0 20px;
+        color: #f8f9fb;
+        font-size: x-large;
+    }
+  }
+  .columnacon{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+
+a:link {
+    color: black
+}
+
+a:visited {
+    color: black;
+}
+
+#menu ul li a:hover {
+
+    color: white;
+    text-decoration: underline;
+}
+
+#paginas ul li {
+    padding-left: 20px;
+}
+
+div#carta {
+    background-color: #deddd8;
+}
+#desplegable{
+    background-color: #deddd8;
+}
+.botonancho{
+    width: 200px;
+    height: 80px;
+    background-color: #e86b1c;
+    color:white;
+    
+}
+.imagengrande:hover{
+    transform: scale(1.2);
+    text-decoration: underline;
+}
+.cartaverde{
+    background-color: rgb(5, 209, 5);
+}
+.check{
+    transform: scale(3);
+}

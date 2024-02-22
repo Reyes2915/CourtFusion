@@ -1,0 +1,2 @@
+0 */2 * * * C:\ServidorLocal\php7\php.exe -f C:\Apache24\htdocs\Ejercicios\TFG\limpiar_reservas.php
+

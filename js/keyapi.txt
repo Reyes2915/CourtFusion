@@ -1,0 +1,10 @@
+Municipios de España:78f86e16edd8bc80c4708112811783501edebf3a6428aa9055a783fa96541d1a
+Clave recaptcha:6Lf2-osoAAAAACGSi-kHI2lKulWNwLAnvw3YlRA1
+Clave secreta:6Lf2-osoAAAAAI74s4vR9azv-6sOtF51KDRBQqG1
+Contraseña gmail servicio PHPmailer:sfpz mtlk byza vxoj
+Clave de API:AIzaSyCNPVa1WVfjAXYDxZxhL3w_gpkJN6TKXwk
+
+VIRTUAL EARTH:MiGtaezrn550Y2zxAanE~fgg0btSeHQ1509aqAVqXlA~Av367PS242wIqVFPQxMOWDApwz4_wZ9pY_JVD5RuXFvB_DPipIU34DQuwQe6C-yT
+API WEATHER:b94f9f198880e633033f0cbd587d9b3d
+
+HOLIDAYS API:f919b9e4-a068-45eb-ba94-56578cdf7052
